@@ -1,0 +1,23 @@
+{
+  "demoURL": "https://demoqa.com/",
+  "fullName": "Ahmet Gundogdu",
+  "email": "ahmetgundo1@gmail.com",
+  "currentAddress": "Ankara/Turkey",
+  "bookName": "You Don't Know JS",
+  "credentialType" : {
+    "firstName": "ahmet",
+    "lastName": "gundogdu",
+    "email": "ahmetgun@gmail.com",
+    "gender": "male",
+    "phone": "3333333333",
+    "dateOfBirth": {
+      "month": "4",
+      "year": "1994",
+      "day": "22"
+    },
+    "subject": "Computer Science",
+    "hobbies": ["Sports", "Reading", "Music"],
+    "curAddress": "Istanbul/Turkey"
+  }
+  
+}

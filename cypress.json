@@ -1,0 +1,8 @@
+{
+    "chromeWebSecurity": false,
+    "reporter": "cypress-multi-reporters",
+    "reporterOptions": {
+        "configFile": "cypress/reporters/report-config.json"
+    },
+    "video": false
+}

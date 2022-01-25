@@ -1,0 +1,19 @@
+{
+  "name": "casestudyspritecloud",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "ahmet",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^9.1.1",
+    "cypress-multi-reporters": "^1.5.0",
+    "mocha": "^9.2.0",
+    "mochawesome": "^7.0.1",
+    "mochawesome-merge": "^4.2.1"
+  },
+  "dependencies": {}
+}
