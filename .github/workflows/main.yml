@@ -8,4 +8,9 @@ jobs:
         uses: actions/checkout@v2.4.0
       - name: Cypress.io
         uses: cypress-io/github-action@v2.9.7
-      
+      - name: Upload results to Calliope
+        run: curl -X POST
+           -H "x-api-key:${{ secrets.API_KEY }}"
+           -H "multipart/form-data"
+           -F "file[]=@output.json"
+           "https://app.calliope.pro/api/v2/profile/${{ secrets.PROFILE_ID }}/import/cucumber?tag[]=myos&tag[]=myplatform&tag[]=mybuild"
