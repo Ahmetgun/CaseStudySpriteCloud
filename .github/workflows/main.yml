@@ -13,4 +13,4 @@ jobs:
            -H "x-api-key:${{ secrets.API_KEY }}"
            -H "Content-Type:multipart/form-data"
            -F "file[]=@cypress/results/mochawesome.json"
-           "https://app.calliope.pro/api/v2/profile/${PROFILE_ID}/import/mochawesome?tag[]=myos&tag[]=myplatform&tag[]=mybuild"
+           "https://app.calliope.pro/api/v2/profile/${{ secrets.PROFILE_ID }}/import/mochawesome?tag[]=myos&tag[]=myplatform&tag[]=mybuild"
