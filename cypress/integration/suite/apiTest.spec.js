@@ -3,7 +3,7 @@
 
 describe('CaseStudyAPI', function () {
 
-    it('TC1: Add new pet into the store with POST request', function () {
+    it('TC1: Add new pett into the store with POST request', function () {
         cy.request({
             method: "POST",
             url: "https://petstore.swagger.io/v2/pet",
