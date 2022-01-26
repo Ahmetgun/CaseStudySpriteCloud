@@ -52,8 +52,6 @@ and test report file can be seen in the Calliope.pro at the end of the execution
 
 - Sample calliope report https://app.calliope.pro/reports/115581
 
-![img.png](reportCalliope.png)
-
 ### Run Via Cypress Interface
 
 Please execute following command in order to start cypress interface in the terminal;
