@@ -2,7 +2,6 @@ name: Cypress Tests
 on: [push]
 jobs:
   cypress-run:
-    continue-on-error: true
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
