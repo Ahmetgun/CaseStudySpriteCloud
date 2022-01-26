@@ -5,11 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "cypress:open": "cypress open",
-    "create:results": "mkdir cypress/reports/ && mkdir cypress/reports/mochawesome",
-    "pretest": "npm run create:results",
-    "combine:reports": "npx mochawesome-merge cypress/results/mocha/*.json > cypress/results/mochawesome/finalresult.json",
-    "generate:reports": "marge cypress/results/mochawesome/finalresult.json -f report -o cypress/results/mochawesome"
+    "cypress:open": "cypress open"
   },
   "author": "ahmet",
   "license": "ISC",
