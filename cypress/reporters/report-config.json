@@ -2,7 +2,6 @@
     "reporterEnabled": "mochawesome",
     "mochawesomeReporterOptions": {
         "reportDir": "cypress/results",
-        "quite": true,
         "overwrite": false,
         "html": true,
         "json": true,
