@@ -8,10 +8,6 @@ jobs:
         uses: actions/checkout@v2.4.0
       - name: Cypress.io
         uses: cypress-io/github-action@v2.9.7
-      - name: Combining reports
-        run: npm run combine:reports
-      - name: Generate reports
-        run: npm run generate:reports
       - name: Upload results to Calliope
         if: always()
         run: curl -X POST
