@@ -6,7 +6,10 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "cypress:open": "cypress open",
-    "combine:reports": "npx mochawesome-merge cypress/results/mochawesome*.json > cypress/results/mochawesome/finalresult.json"
+    "create:results": "mkdir cypress/reports/ && mkdir cypress/reports/mochawesome",
+    "pretest": "npm run create:results",
+    "combine:reports": "npx mochawesome-merge cypress/results/mocha/*.json > cypress/results/mochawesome/finalresult.json",
+    "generate:reports": "marge cypress/results/mochawesome/finalresult.json -f report -o cypress/results/mochawesome"
   },
   "author": "ahmet",
   "license": "ISC",
@@ -19,3 +22,10 @@
   },
   "dependencies": {}
 }
+
+
+"create:reportsfolder": "mkdir cypress/reports/ && mkdir cypress/reports/mochareports",
+    "pretest": "npm run create:reportsfolder",
+    "clean:screenshots": "rm -R -f cypress/screenshots",
+    "combine:reports": "npx mochawesome-merge cypress/reports/mocha/*.json > cypress/reports/mochareports/report.json",
+    "generate:report": "marge cypress/reports/mochareports/report.json -f report -o cypress/reports/mochareports",
