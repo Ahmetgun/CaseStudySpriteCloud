@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "cypress:open": "cypress open",
-    "combine:reports": "npx mochawesome-merge cypress/results/mochawesome*.json > cypress/results/mochawesome/finalresult.json"
+    "combine:reports": "npx mochawesome-merge cypress/results/mochawesome*.json > cypress/results/mochawesome/testresults.json"
   },
   "author": "ahmet",
   "license": "ISC",

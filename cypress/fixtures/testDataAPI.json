@@ -1,0 +1,8 @@
+{
+    "petID": 1287463,
+    "petName": "daisy",
+    "updatedPetName": "lilly",
+    "postRequest": "v2/pet",
+    "getRequest": "v2/pet/"
+   }
+   
