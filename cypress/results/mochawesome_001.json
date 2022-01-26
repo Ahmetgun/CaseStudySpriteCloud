@@ -1,0 +1,145 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 3,
+    "passes": 3,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-01-26T11:21:22.127Z",
+    "end": "2022-01-26T11:21:40.626Z",
+    "duration": 18499,
+    "testsRegistered": 3,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "55c29777-13d8-4da0-990b-6d654a7ebb18",
+      "title": "",
+      "fullFile": "cypress/integration/suite/uiQuestion.spec.js",
+      "file": "cypress/integration/suite/uiQuestion.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "c21b5856-4924-4940-ac8f-69a4a0689c1e",
+          "title": "CaseStudyUI",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "TC1: Submit Text Box Form",
+              "fullTitle": "CaseStudyUI TC1: Submit Text Box Form",
+              "timedOut": null,
+              "duration": 6454,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "hp.navigateToElementsPage();\nep.submitTextBoxForm(testData.fullName, testData.email, testData.currentAddress);",
+              "err": {},
+              "uuid": "80379b92-e43b-47e5-8d81-d0919b0d28cc",
+              "parentUUID": "c21b5856-4924-4940-ac8f-69a4a0689c1e",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "TC2: Check whether user can search and select the book",
+              "fullTitle": "CaseStudyUI TC2: Check whether user can search and select the book",
+              "timedOut": null,
+              "duration": 5811,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "hp.navigateToBookStorePage();\nep.searchBook(testData.bookName);",
+              "err": {},
+              "uuid": "6f5cfb04-f515-4be9-997c-0c1dcb1b2056",
+              "parentUUID": "c21b5856-4924-4940-ac8f-69a4a0689c1e",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "TC3: Check whether user can fill the student registration form",
+              "fullTitle": "CaseStudyUI TC3: Check whether user can fill the student registration form",
+              "timedOut": null,
+              "duration": 5143,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "hp.navigateToFormsPage();\nep.fillStudentRegistrationForm(testData.credentialType);",
+              "err": {},
+              "uuid": "13136787-9de0-4141-889a-0d2bd2eb576d",
+              "parentUUID": "c21b5856-4924-4940-ac8f-69a4a0689c1e",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "80379b92-e43b-47e5-8d81-d0919b0d28cc",
+            "6f5cfb04-f515-4be9-997c-0c1dcb1b2056",
+            "13136787-9de0-4141-889a-0d2bd2eb576d"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 17408,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.0.1"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/results",
+        "overwrite": false,
+        "html": true,
+        "json": true,
+        "charts": true
+      },
+      "version": "6.0.1"
+    }
+  }
+}

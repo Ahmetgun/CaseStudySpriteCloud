@@ -1,0 +1,164 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 4,
+    "passes": 4,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-01-26T11:21:19.812Z",
+    "end": "2022-01-26T11:21:21.139Z",
+    "duration": 1327,
+    "testsRegistered": 4,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "df895c2c-d18a-4029-8fb7-1f87c086b442",
+      "title": "",
+      "fullFile": "cypress/integration/suite/apiQuestion.spec.js",
+      "file": "cypress/integration/suite/apiQuestion.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "c7b5360a-913f-4909-a1d9-ca621d5b1eab",
+          "title": "CaseStudyAPI",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "TC1: Add new pet into the store with POST request",
+              "fullTitle": "CaseStudyAPI TC1: Add new pet into the store with POST request",
+              "timedOut": null,
+              "duration": 798,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.request({\n  method: \"POST\",\n  url: \"v2/pet\",\n  body: {\n    \"id\": 1287463,\n    \"category\": {\n      \"id\": 0,\n      \"name\": \"string\"\n    },\n    \"name\": \"daisy\",\n    \"photoUrls\": [\"string\"],\n    \"tags\": [{\n      \"id\": 0,\n      \"name\": \"string\"\n    }],\n    \"status\": \"available\"\n  },\n  headers: {\n    \"content-type\": \"application/json\"\n  }\n}).then(function (response) {\n  expect(response.body.name).equal(\"daisy\");\n});",
+              "err": {},
+              "uuid": "202bd990-3d9a-4a0a-83e2-b7f6c6c0a32e",
+              "parentUUID": "c7b5360a-913f-4909-a1d9-ca621d5b1eab",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "TC2: Retrieve newly added pet with GET request",
+              "fullTitle": "CaseStudyAPI TC2: Retrieve newly added pet with GET request",
+              "timedOut": null,
+              "duration": 175,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.request({\n  method: \"GET\",\n  url: \"v2/pet/1287463\",\n  retryOnStatusCodeFailure: true\n}).then(function (response) {\n  expect(response.body.id).equal(1287463);\n});",
+              "err": {},
+              "uuid": "9725ec20-80ce-47e7-8a09-a63ae8e48b0f",
+              "parentUUID": "c7b5360a-913f-4909-a1d9-ca621d5b1eab",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "TC3: Update the pet with PUT Request",
+              "fullTitle": "CaseStudyAPI TC3: Update the pet with PUT Request",
+              "timedOut": null,
+              "duration": 166,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.request({\n  method: \"PUT\",\n  url: \"v2/pet\",\n  body: {\n    \"id\": 1287463,\n    \"category\": {\n      \"id\": 0,\n      \"name\": \"string\"\n    },\n    \"name\": \"lilly\",\n    \"photoUrls\": [\"string\"],\n    \"tags\": [{\n      \"id\": 0,\n      \"name\": \"string\"\n    }],\n    \"status\": \"available\"\n  },\n  headers: {\n    \"content-type\": \"application/json\"\n  }\n}).then(function (response) {\n  expect(response.body.name).equal(\"lilly\");\n});",
+              "err": {},
+              "uuid": "67ecdfbc-d938-4f3d-94a9-c3ed6a6056f9",
+              "parentUUID": "c7b5360a-913f-4909-a1d9-ca621d5b1eab",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "TC4: Delete the pet with DELETE Request",
+              "fullTitle": "CaseStudyAPI TC4: Delete the pet with DELETE Request",
+              "timedOut": null,
+              "duration": 165,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.request({\n  method: \"DELETE\",\n  url: \"v2/pet/1287463\"\n}).then(function (response) {\n  expect(response.body).to.deep.equal({\n    \"code\": 200,\n    \"type\": \"unknown\",\n    \"message\": \"1287463\"\n  });\n});",
+              "err": {},
+              "uuid": "c86ab2fa-502e-4e39-8ab1-4a0e49b2645f",
+              "parentUUID": "c7b5360a-913f-4909-a1d9-ca621d5b1eab",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "202bd990-3d9a-4a0a-83e2-b7f6c6c0a32e",
+            "9725ec20-80ce-47e7-8a09-a63ae8e48b0f",
+            "67ecdfbc-d938-4f3d-94a9-c3ed6a6056f9",
+            "c86ab2fa-502e-4e39-8ab1-4a0e49b2645f"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 1304,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.0.1"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/results",
+        "overwrite": false,
+        "html": true,
+        "json": true,
+        "charts": true
+      },
+      "version": "6.0.1"
+    }
+  }
+}
