@@ -1,5 +1,6 @@
 {
     "chromeWebSecurity": false,
+    "baseUrl": "https://petstore.swagger.io/",
     "reporter": "cypress-multi-reporters",
     "reporterOptions": {
         "configFile": "cypress/reporters/report-config.json"

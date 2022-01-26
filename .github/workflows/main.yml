@@ -10,6 +10,8 @@ jobs:
         uses: cypress-io/github-action@v2.9.7
       - name: Combining reports
         run: npm run combine:reports
+      - name: Generation reports
+        run: npm run generate:repors
       - name: Upload results to Calliope
         run: curl -X POST
            -H "x-api-key:${{ secrets.API_KEY }}"
