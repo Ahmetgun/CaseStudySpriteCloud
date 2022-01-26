@@ -2,7 +2,7 @@
 
 
 describe('CaseStudyAPI', function () {
-    let testData
+    let testDataAPI
     before(function () {
         cy.fixture("testDataAPI").then(function (data) {
             testDataAPI = data
