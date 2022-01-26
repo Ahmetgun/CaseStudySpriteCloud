@@ -62,6 +62,9 @@ npx cypress open
 
 Afterwards you can select any spec.js files under suite folder in order to run
 
+## Test Scenario Selection
 
+For the API tests, I created four different tests based on CRUD operation. Tests contain GET, POST, PUT and DELETE HTTP methods.
+For the UI tests, I created simple tests which can be considered real-life scenarios like form upload, book search, selection, etc.
 
 
