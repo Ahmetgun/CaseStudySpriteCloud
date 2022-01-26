@@ -23,9 +23,9 @@ npm install
     - TC3: Update the pet with PUT Request (It is updating the pets name)
     - TC4: Delete the pet with DELETE Request (It is deleting the pet as a final step)
 - **uiQuestion.spec.js:** It runs the following UI tests in the https://demoqa.com/ (data parameters can be found inside the cypress/fixtures/testData.json file)
--   - TC1: Submit Text Box Form (user navigates to the https://demoqa.com/text-box page and filling out the form)
--   - TC2: Check whether user can search and select the book (user navigates to the https://demoqa.com/books page, then search and open the book)
--   - TC3: Check whether user can fill the student registration form (user navigates to the https://demoqa.com/automation-practice-form page and filling out the form)
+    - TC1: Submit Text Box Form (user navigates to the https://demoqa.com/text-box page and filling out the form)
+    - TC2: Check whether user can search and select the book (user navigates to the https://demoqa.com/books page, then search and open the book)
+    - TC3: Check whether user can fill the student registration form (user navigates to the https://demoqa.com/automation-practice-form page and filling out the form)
 
 - There are two .js file under the cypress/support/pageObject folder
     - **ElementsPage.js**
