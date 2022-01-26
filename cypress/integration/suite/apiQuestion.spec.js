@@ -2,18 +2,25 @@
 
 
 describe('CaseStudyAPI', function () {
+    let testData
+    before(function () {
+        cy.fixture("testDataAPI").then(function (data) {
+            testDataAPI = data
+        })
+    })
+
 
     it('TC1: Add new pet into the store with POST request', function () {
         cy.request({
             method: "POST",
-            url: "v2/pet",
+            url: testDataAPI.postRequest,
             body: {
-                "id": 1287463,
+                "id": testDataAPI.petID,
                 "category": {
                     "id": 0,
                     "name": "string"
                 },
-                "name": "daisy",
+                "name": testDataAPI.petName,
                 "photoUrls": [
                     "string"
                 ],
@@ -29,7 +36,7 @@ describe('CaseStudyAPI', function () {
                 "content-type": "application/json"
             }
         }).then(function (response) {
-            expect(response.body.name).equal("daisy")
+            expect(response.body.name).equal(testDataAPI.petName)
         })
 
     })
@@ -37,25 +44,25 @@ describe('CaseStudyAPI', function () {
     it('TC2: Retrieve newly added pet with GET request', function () {
         cy.request({
             method: "GET",
-            url: "v2/pet/1287463",
+            url: testDataAPI.getRequest + testDataAPI.petID,
             retryOnStatusCodeFailure: true
 
         }).then(function (response) {
-            expect(response.body.id).equal(1287463)
+            expect(response.body.id).equal(testDataAPI.petID)
         })
     })
 
     it('TC3: Update the pet with PUT Request', function () {
         cy.request({
             method: "PUT",
-            url: "v2/pet",
+            url: testDataAPI.postRequest,
             body: {
-                "id": 1287463,
+                "id": testDataAPI.petID,
                 "category": {
                     "id": 0,
                     "name": "string"
                 },
-                "name": "lilly",
+                "name": testDataAPI.updatedPetName,
                 "photoUrls": [
                     "string"
                 ],
@@ -71,19 +78,19 @@ describe('CaseStudyAPI', function () {
                 "content-type": "application/json"
             }
         }).then(function (response) {
-            expect(response.body.name).equal("lilly")
+            expect(response.body.name).equal(testDataAPI.updatedPetName)
         })
     })
 
     it('TC4: Delete the pet with DELETE Request', function () {
         cy.request({
             method: "DELETE",
-            url: "v2/pet/1287463"
+            url: testDataAPI.getRequest + testDataAPI.petID
         }).then(function (response) {
             expect(response.body).to.deep.equal({
                 "code": 200,
                 "type": "unknown",
-                "message": "1287463"
+                "message": String(testDataAPI.petID)
             })
         })
     })
