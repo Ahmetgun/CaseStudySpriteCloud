@@ -25,7 +25,7 @@ describe('CaseStudyUI', function () {
 
     it('TC1: Submit Text Box Form', function () {
         hp.navigateToElementsPage()
-        ep.submitTextBoxForm(testData.fullName, testData.email, testData.currentAddress)            
+        ep.submitTextBoxFrm(testData.fullName, testData.email, testData.currentAddress)            
     })
 
     it('TC2: Check whether user can search and select the book', function() {
