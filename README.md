@@ -43,13 +43,14 @@ npx cypress run --spec cypress/integration/suite/uiQuestion.spec.js
 
 A cypress report will appear at the end of the execution. In addition to that you can find the html and json report under the cypress/results folder (I used "mochawesome" to do that)
 
-- Mochawesome report
+- Sample mochawesome report
 
 ![img.png](reportAPI.png)
-![img.png](reportUI.png)
 
 Also, there is a main.yaml file under the .github folder, thanks to this file after each new "git push", tests run automatically in the github actions 
 and test report file can be seen in the Calliope.pro at the end of the execution.
+
+- Sample calliope report
 
 ### Run Via Cypress Interface
 
