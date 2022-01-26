@@ -88,4 +88,15 @@ describe('CaseStudyAPI', function () {
         })
     })
 
+    it('TC5: Retrieve newly added pet with GET request', function () {
+        cy.request({
+            method: "GET",
+            url: "v2/pet/2341234",
+            retryOnStatusCodeFailure: true
+
+        }).then(function (response) {
+            expect(response.body.id).equal(2341234)
+        })
+    })
+
 })
