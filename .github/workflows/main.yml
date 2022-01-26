@@ -2,13 +2,13 @@ name: Cypress Tests
 on: [push]
 jobs:
   cypress-run:
+    continue-on-error: true
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v2.4.0
       - name: Cypress.io
         uses: cypress-io/github-action@v2.9.7
-        continue-on-error: true
       - name: Combining reports
         run: npm run combine:reports
       - name: Upload results to Calliope
